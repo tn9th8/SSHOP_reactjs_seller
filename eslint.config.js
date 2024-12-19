@@ -4,6 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 
+// Defect bugs while we are developing this software
 export default tseslint.config(
   { ignores: ['dist'] },
   {
