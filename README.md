@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# E-commerce RESTful API Backend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Client-side-rendering Seller Website built with React.JS 19 for an e-commerce platform similar to TikTok Shop. It supports various functionalities such as product management, user management, order processing, and more // todo: continue README. //Ctrl + Shift + V to preview the README file on Vscode
 
-Currently, two official plugins are available:
+## How to run
+- //to yarn build and preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology
+- React.JS 19 (Yarn, TS, Vite, SWC)
+- React Router
+- Axios
+- Ant design
 
-## Expanding the ESLint configuration
+React.JS
+- Was first appeared in 2012 and migrated the market from multi-page websites with server-side rendering to single-page applications with client-side rendering
+- Reuse components
+- Own a single page and no reloading required
+- Real-time features. Example: Binance, SSI
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+React Router
+- a
+- a
 
-- Configure the top-level `parserOptions` property like this:
+Axios
+- a
+- a
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Ant Design
+- a
+- a
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Redux Toolkit
+- a
+- a
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+//todo: Real-time library:
+- a
+- a
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Project
+- Vite:
+  - announce the bugs in the console (note)
+- Server: localhost
+- Port: 3066
+- //todo: Context-path: sshop
+- //build
+
+Git rule
+- For new future, please set the branch with name: "features/{features-description}" for the new branch name.
+- For fix bug, please set the branch with name: "fix/{bug-description}" for the new branch name.
+
+Reference:
+- React.JS: https://react.dev/learn
+- Vite.JS: https://vite.dev/guide
