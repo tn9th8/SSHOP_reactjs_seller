@@ -1,0 +1,60 @@
+//for layout components
+/* layout header */
+.ant-layout-header {
+    background-color: #121212;
+}
+
+/* icon */
+.anticon {
+    font-size: 14px !important;
+}
+
+/* space of items at level 2 */
+.ant-menu-sub {
+    background-color: #ffffff !important;
+}
+
+/* items: level 1, not child */
+.ant-menu-item {
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    color: #000000 !important;
+    height: 36px !important;
+    padding-left: 10px !important;
+}
+
+/* icon selected: level 1, not child*/
+.ant-menu-submenu-selected {
+    .ant-menu-item-icon {
+        color: rgb(0, 153, 149) !important;
+    }
+}
+
+/* items: level 1, has child */
+.ant-menu-submenu-title {
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    color: #000000 !important;
+    height: 36px !important;
+    padding-left: 10px !important;
+}
+
+/* icon selected: level 1, has child */
+.ant-menu-item-selected {
+    .ant-menu-item-icon {
+        color: rgb(0, 153, 149) !important;
+    }
+}
+
+/* item: level 2 */
+.ant-menu-item-only-child {
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    color: #000000a6 !important;
+    height: 36px !important;
+    padding-left: 36px !important;
+}
+
+/* item selected: level 1, 2 */
+.ant-menu-item-selected {
+    background-color: #00000016 !important;
+    color: rgb(0, 153, 149) !important;
+    border: 2px solid rgb(0, 153, 149);
+}

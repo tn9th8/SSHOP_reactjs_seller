@@ -19,6 +19,10 @@ React.JS
 - Own a single page and no reloading required
 - Real-time features. Example: Binance, SSI
 
+Yarn
+- yarn: install all
+- yarn add library-name@latest --exact
+
 React Router
 - a
 - a
