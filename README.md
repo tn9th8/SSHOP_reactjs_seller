@@ -2,6 +2,8 @@
 
 This is a single-page frontend with client-side rendering built with React.JS 19 for an e-commerce platform similar to TikTok Shop. It supports various functionalities such as product management, user management, order processing, and more // todo: continue README. //Ctrl + Shift + V to preview the README file on Vscode
 
+Thinking in React: The first task của a React developer không phải là việc hì hục coding. Thay vào đó, chúng ta nên thực hiện việc chia layout, như là: xác định đâu là thành phần có thể tái sử dụng được, bố cục và vị trí của nó như thế nào.
+
 ## How to run
 - //to yarn build and preview
 
@@ -52,3 +54,4 @@ Git rule
 Reference:
 - React.JS: https://react.dev/learn
 - Vite.JS: https://vite.dev/guide
+- HTML events: https://www.w3schools.com/tags/ref_eventattributes.asp
