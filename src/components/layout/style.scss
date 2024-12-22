@@ -1,7 +1,12 @@
 //for layout components
-/* layout header */
 .ant-layout-header {
     background-color: #121212;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #121212;
+    color: #ffffff;
+    width: 100%;
 }
 
 /* icon */
@@ -49,7 +54,7 @@
     font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
     color: #000000a6 !important;
     height: 36px !important;
-    padding-left: 36px !important;
+    padding-left: 34px !important;
 }
 
 /* item selected: level 1, 2 */

@@ -3,7 +3,7 @@ import './style.scss';
 
 const HeaderComponent = () => {
     return (
-        <Header style={{ display: 'flex', alignItems: 'center', height: 60 }} />
+        <Header />
     );
 }
 

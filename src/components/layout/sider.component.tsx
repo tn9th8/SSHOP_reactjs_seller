@@ -3,6 +3,7 @@ import Sider from "antd/es/layout/Sider";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { HomeFilled as IconHome, SnippetsFilled as IconOrder, ProductFilled as IconProduct } from '@ant-design/icons';
+import './style.scss';
 
 const items = [
     {
@@ -49,7 +50,6 @@ const items = [
 
 const SiderComponent = () => {
     const [openKeys, setOpenKeys] = useState<string[]>([]);
-    // const [selectedLabel, setSelectedLabel] = useState<string>('Homepage');
     const navigate = useNavigate();
     const { token: { colorBgContainer } } = theme.useToken();
 
@@ -66,7 +66,6 @@ const SiderComponent = () => {
         if (item.key === 'Homepage')
             setOpenKeys([]);
         navigate(item.path);
-        // setSelectedLabel(item.label);
     };
 
     const findItemByKeyPath = (keyPath: string[]) => {

@@ -9,24 +9,23 @@ import ManageCancellations from './pages/order/manage-cancellations.page';
 import ManageProducts from './pages/product/manage-products.page';
 import ProductRatings from './pages/product/product-ratings.page';
 
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         {/* "/" will be navigated to "/homepage" */}
         <Route index element={<Navigate to='/homepage' />} />
-        {/* render Layout including Outlet */}
+        {/* render layout including outlet */}
         <Route element={<LayoutPage />}>
-          {/* render HomePage */}
+          {/* render homepage */}
           <Route path='homepage' element={<HomePage />} />
-          {/* render OrderPage */}
+          {/* render order pages */}
           <Route path='order'>
             <Route index element={<Navigate to='/order/manage' />} />
             <Route path='manage' element={<ManageOrders />} />
             <Route path='cancellation' element={<ManageCancellations />} />
           </Route>
-          {/* render ProductPage */}
+          {/* render product pages */}
           <Route path='product'>
             <Route index element={<Navigate to='/product/manage' />} />
             <Route path='manage' element={<ManageProducts />} />
@@ -35,5 +34,5 @@ createRoot(document.getElementById('root')!).render(
         </Route>
       </Routes>
     </BrowserRouter>
-  </StrictMode >,
+  </StrictMode >
 )
