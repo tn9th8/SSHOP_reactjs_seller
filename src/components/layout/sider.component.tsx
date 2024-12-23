@@ -1,48 +1,43 @@
-import { Menu, theme } from "antd";
+import { Menu, MenuProps } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { HomeFilled as IconHome, SnippetsFilled as IconOrder, ProductFilled as IconProduct } from '@ant-design/icons';
 import './style.scss';
 
-const items = [
+const items: MenuProps['items'] = [
     {
-        key: 'Homepage',
+        key: '/homepage',
         icon: <IconHome />,
         label: 'Homepage',
-        path: '/homepage',
     },
     {
-        key: 'Orders',
+        key: '/order',
         icon: <IconOrder />,
         label: 'Orders',
         children: [
             {
-                key: 'Manage orders',
+                key: '/order/manage',
                 label: 'Manage orders',
-                path: '/order/manage',
             },
             {
-                key: 'Manage cancellations',
+                key: '/order/cancellation',
                 label: 'Manage cancellations',
-                path: '/order/cancellation',
             }
         ],
     },
     {
-        key: 'Products',
+        key: '/product',
         icon: <IconProduct />,
         label: 'Products',
         children: [
             {
-                key: 'Manage products',
+                key: '/product/manage',
                 label: 'Manage products',
-                path: '/product/manage',
             },
             {
-                key: 'Product ratings',
+                key: '/product/rating',
                 label: 'Product ratings',
-                path: '/product/rating',
             }
         ],
     },
@@ -51,7 +46,6 @@ const items = [
 const SiderComponent = () => {
     const [openKeys, setOpenKeys] = useState<string[]>([]);
     const navigate = useNavigate();
-    const { token: { colorBgContainer } } = theme.useToken();
 
     const onOpenChange = (keys: string[]) => {
         //keys: [old key, new key]
@@ -60,41 +54,20 @@ const SiderComponent = () => {
     };
 
     const onSelect = (info: any) => {
-        const { keyPath } = info;
-        const item = findItemByKeyPath(keyPath);
-
-        if (item.key === 'Homepage')
-            setOpenKeys([]);
-        navigate(item.path);
+        //keyPath: [selectedKey, openKey]
+        const { keyPath: [selectedKey, openKey] } = info;
+        const openKeys = openKey === undefined ? [] : [openKey];
+        setOpenKeys(openKeys);
+        navigate(selectedKey);
     };
 
-    const findItemByKeyPath = (keyPath: string[]) => {
-        let currentItems: any = items;
-        let foundItem: any;
-        //keyPath: [child item, parent item]
-        for (let i = keyPath.length - 1; i >= 0; i--) {
-            console.log(keyPath[i]);
-            foundItem = currentItems.find((item: any) => item.key === keyPath[i]);
-            console.log(foundItem);
-
-            if (foundItem) {
-                currentItems = foundItem.children || [];
-            } else {
-                return undefined;
-            }
-            console.log(currentItems);
-        }
-
-        return foundItem;
-    };
 
     return (
-        <Sider width={220} style={{ background: colorBgContainer }}>
+        <Sider>
             <Menu
                 mode="inline"
-                defaultSelectedKeys={['Homepage']}
-                defaultOpenKeys={['Homepage']}
-                style={{ paddingLeft: 2, paddingRight: 2, marginTop: 16 }}
+                defaultSelectedKeys={['/homepage']}
+                defaultOpenKeys={['/homepage']}
                 items={items}
                 openKeys={openKeys}
                 onOpenChange={onOpenChange}
