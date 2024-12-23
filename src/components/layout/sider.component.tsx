@@ -41,7 +41,7 @@ const items: MenuProps['items'] = [
             }
         ],
     },
-]
+];
 
 const SiderComponent = () => {
     const [openKeys, setOpenKeys] = useState<string[]>([]);
@@ -75,6 +75,6 @@ const SiderComponent = () => {
             />
         </Sider>
     );
-}
+};
 
 export default SiderComponent;
