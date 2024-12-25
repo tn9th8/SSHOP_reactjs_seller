@@ -43,7 +43,7 @@ const items: MenuProps['items'] = [
     },
 ];
 
-const SiderComponent = () => {
+const SiderComp = () => {
     const [openKeys, setOpenKeys] = useState<string[]>([]);
     const navigate = useNavigate();
 
@@ -77,4 +77,4 @@ const SiderComponent = () => {
     );
 };
 
-export default SiderComponent;
+export default SiderComp;

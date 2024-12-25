@@ -12,6 +12,7 @@ Thinking in React: The first task của a React developer không phải là vi�
 - React Router
 - Axios
 - Ant design
+- Socket.io (an real-time library)
 
 React.JS
 - Was first appeared in 2012 and migrated the market from multi-page websites with server-side rendering to single-page applications with client-side rendering
@@ -22,26 +23,6 @@ React.JS
 Yarn
 - yarn: install all
 - yarn add library-name@latest --exact
-
-React Router
-- a
-- a
-
-Axios
-- a
-- a
-
-Ant Design
-- a
-- a
-
-Redux Toolkit
-- a
-- a
-
-//todo: Real-time library:
-- a
-- a
 
 ## Project
 - Vite:
@@ -59,3 +40,7 @@ Reference:
 - React.JS: https://react.dev/learn
 - Vite.JS: https://vite.dev/guide
 - HTML events: https://www.w3schools.com/tags/ref_eventattributes.asp
+
+## Bugs:
+- Navigate to login page if user hasn't logged in yet. On the contrary, navigate to homepage
+  - So, fix the account module at FE + BE

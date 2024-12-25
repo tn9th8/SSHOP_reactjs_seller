@@ -1,10 +1,10 @@
 import { Header } from "antd/es/layout/layout";
 import './style.scss';
 
-const HeaderComponent = () => {
+const HeaderComp = () => {
     return (
         <Header />
     );
 };
 
-export default HeaderComponent;
+export default HeaderComp;
