@@ -40,7 +40,3 @@ Reference:
 - React.JS: https://react.dev/learn
 - Vite.JS: https://vite.dev/guide
 - HTML events: https://www.w3schools.com/tags/ref_eventattributes.asp
-
-## Bugs:
-- Navigate to login page if user hasn't logged in yet. On the contrary, navigate to homepage
-  - So, fix the account module at FE + BE

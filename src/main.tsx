@@ -19,8 +19,8 @@ createRoot(document.getElementById('root')!).render(
         {/* public routes */}
         <Route element={<PublicPage />}>
           {/* account */}
-          <Route path='account'>
-            <Route index element={<Navigate to='/account/login' />} />
+          <Route path='access'>
+            <Route index element={<Navigate to='/access/login' />} />
             <Route path='login' element={<LoginPage />} />
           </Route>
         </Route>
