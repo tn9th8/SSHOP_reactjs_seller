@@ -1,7 +1,7 @@
 import { Layout } from 'antd';
 import { Outlet } from 'react-router';
-import HeaderComp from '../../components/layout/header.component';
-import SiderComp from '../../components/layout/sider.component';
+import HeaderComp from '../../components/app/header.component';
+import SiderComp from '../../components/app/sider.component';
 import './style.scss';
 
 const LayoutPage = () => {

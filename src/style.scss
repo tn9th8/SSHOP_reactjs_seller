@@ -6,6 +6,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: TikTokMedium;
+  src: url('/font/TikTokText-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* page header */
 .ant-flex {
   margin-top: 14px !important;

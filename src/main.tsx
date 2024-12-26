@@ -1,16 +1,17 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
-import LayoutPage from './pages/base/layout.page';
+import LayoutPage from './pages/app/layout.page';
 import './style.scss';
+import '@arco-design/web-react/dist/css/arco.css';
 import HomePage from './pages/home/home.page';
 import ManageOrders from './pages/order/manage-orders.page';
 import ManageCancellations from './pages/order/manage-cancellations.page';
 import ManageProducts from './pages/product/manage-products.page';
 import ProductRatings from './pages/product/product-ratings.page';
 import LoginPage from './pages/account/login/login.page';
-import PrivatePage from './pages/base/private.page';
-import PublicPage from './pages/base/public.page';
+import PrivatePage from './pages/app/private.page';
+import PublicPage from './pages/app/public.page';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
