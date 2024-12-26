@@ -2,17 +2,16 @@ import { Header } from "antd/es/layout/layout";
 import { Menu, Dropdown, Button, Space, Divider } from '@arco-design/web-react';
 import { IconDown, IconLanguage, IconPublic } from '@arco-design/web-react/icon';
 import './style.scss';
-const MenuItem = Menu.Item;
 
-const HeaderComp = () => {
+const PrivateHeader = () => {
 
     const languageMenu = (
         <Menu
             style={{ fontFamily: 'TikTokMedium', borderRadius: 6 }}
             defaultSelectedKeys={['en']}
         >
-            <MenuItem key="vi" style={{ borderRadius: 6 }} disabled>Tiếng Việt</MenuItem>
-            <MenuItem key="en" style={{ borderRadius: 6 }}>US English</MenuItem>
+            <Menu.Item key="vi" style={{ borderRadius: 6 }} disabled>Tiếng Việt</Menu.Item>
+            <Menu.Item key="en" style={{ borderRadius: 6 }}>US English</Menu.Item>
         </Menu>
     );
 
@@ -21,9 +20,9 @@ const HeaderComp = () => {
             style={{ fontFamily: 'TikTokMedium', borderRadius: 6 }}
             defaultSelectedKeys={['en']}
         >
-            <MenuItem key="sg" style={{ borderRadius: 6 }} disabled>Singapore</MenuItem>
-            <MenuItem key="tl" style={{ borderRadius: 6 }} disabled>Thailand</MenuItem>
-            <MenuItem key="vn" style={{ borderRadius: 6 }}>Vietnam</MenuItem>
+            <Menu.Item key="sg" style={{ borderRadius: 6 }} disabled>Singapore</Menu.Item>
+            <Menu.Item key="tl" style={{ borderRadius: 6 }} disabled>Thailand</Menu.Item>
+            <Menu.Item key="vn" style={{ borderRadius: 6 }}>Vietnam</Menu.Item>
         </Menu>
     );
 
@@ -73,4 +72,4 @@ const HeaderComp = () => {
     );
 };
 
-export default HeaderComp;
+export default PrivateHeader;

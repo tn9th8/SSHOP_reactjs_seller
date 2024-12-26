@@ -9,7 +9,7 @@ type TForm = {
     password?: string;
 };
 
-const AccountComp = () => {
+const Login = () => {
     const [messageApi, contextHolder] = message.useMessage();
     const [isSubmit, setIsSubmit] = useState(false);
     const navigate = useNavigate();
@@ -79,4 +79,4 @@ const AccountComp = () => {
     );
 };
 
-export default AccountComp;
+export default Login;

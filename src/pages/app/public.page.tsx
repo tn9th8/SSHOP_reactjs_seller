@@ -1,4 +1,7 @@
 import { Navigate, Outlet } from 'react-router';
+import { Layout } from 'antd';
+import './style.scss';
+import { PublicHeader } from '../../components/app';
 
 
 const PublicPage = () => {
@@ -8,7 +11,14 @@ const PublicPage = () => {
         return <Navigate to="/homepage" />;
     }
 
-    return <Outlet />;
+    return (
+        <Layout className='app-layout'>
+            <PublicHeader />
+            <Layout>
+                <Outlet />
+            </Layout>
+        </Layout >
+    );
 };
 
 export default PublicPage;
